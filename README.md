@@ -1,1 +1,1 @@
-# Algoritmos de ordenamiento :octocat:
+# Algoritmos de ordenamiento :red_circle:
