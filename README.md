@@ -1,1 +1,1 @@
-# Algoritmos de ordenamiento :red_circle:
+# Algoritmos de ordenamiento :curly_loop:
