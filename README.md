@@ -2,8 +2,6 @@
 
 La programación asíncrona o no bloqueante es la nueva realidad. Ya sea que estemos creando aplicaciones de servidor, de escritorio o móviles, es importante que proporcionemos una experiencia que no solo sea fluida desde la perspectiva del usuario, sino que también sea escalable cuando sea necesario.
 
-[Overview](https://kotlinlang.org/docs/reference/coroutines-overview.html)
-
 En esta demo se uso el patron de arquitectura MVP y las siguientes bibliotecas:
 
  - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
@@ -56,7 +54,7 @@ interface Service {
     fun getUsers(): Deferred<Response<List<User>>>  
 }
 ```
-Luego creamos nuestro **objeto** RestApi, donde crearemos una instancia de Retrofit, pero ademas de crearlo como normalmente lo creamos agregamos la siguiente linea de código:
+Luego creamos nuestro **objeto** RestApi, donde crearemos una instancia de Retrofit, pero ademas de crearlo normalmente, le agregamos la siguiente linea de código:
 
 ```kotlin
 .addCallAdapterFactory(CoroutineCallAdapterFactory())
@@ -277,3 +275,7 @@ Ahora que tenemos el diseño hecho, toca el ultimo paso para finalizar la implem
 ```kotlin
 
 ```
+## Fuentes
+
+https://kotlinlang.org/docs/reference/coroutines-overview.html
+https://stackoverflow.com/questions/47871868/what-does-suspend-function-mean-in-kotlin-coroutine
