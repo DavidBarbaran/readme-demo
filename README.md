@@ -43,7 +43,7 @@ class User (
 	var name : String  
 )
 ```
-Luego creamos nuestra interfaz Service donde agregaremos los servicios que vallamos a consumir, pero en el tipo de retorno de los métodos los asignaremos de esta manera:
+Luego creamos nuestra interfaz Service donde agregaremos los servicios que vayamos a consumir, pero en el tipo de retorno de los métodos los asignaremos de esta manera:
 
 ```kotlin
 Deferred<Response<List<User>>>
