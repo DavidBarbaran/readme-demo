@@ -174,7 +174,7 @@ Ahora que dejamos todo listo en nuestro presentador, es el turno de nuestro Acti
 ```kotlin
 class MainActivity : AppCompatActivity(), MainController.View { 
  
-	private val presenter: MainPresenter by inject()
+    private val presenter: MainPresenter by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {  
         super.onCreate(savedInstanceState)  
